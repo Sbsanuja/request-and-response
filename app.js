@@ -38,15 +38,15 @@ app.post('/api/v1/tours', (req,res) => {
 			status: 'success',
 			data: {
 				tour: newTour
-			}
-		})
-	})
+			};
+		});
+	});
 
 
 	
-})
+});
 
 const port = 4000;
 app.listen(port, () => {
 	console.log(`App is running on port ${port}....`)
-})
+});
